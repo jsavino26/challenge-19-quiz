@@ -1,0 +1,33 @@
+[
+    {
+      "question": "What does HTML stand for?",
+      "options": ["HyperText Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "None of the above"],
+      "answer": "HyperText Markup Language"
+  },
+{
+    "question": "What does CSS stand for?",
+    "options": ["Cascading Style Sheets", "Creative Style Sheets", "Computer Style Sheets", "Colorful Style Sheets"],
+    "answer": "Cascading Style Sheets"
+  },
+  {
+    "question": "What does JS stand for?",
+    "options": ["JavaScript", "Java Source", "Java Syntax", "Java Standard"],
+    "answer": "JavaScript"
+  },
+  {
+    "question": "What is the purpose of the <head> tag in HTML?",
+    "options": ["To define the main content of the page", "To provide metadata about the document", "To create a header for the page", "To link to external stylesheets"],
+    "answer": "To provide metadata about the document"
+  } 
+,
+  {
+    "question": "What is the purpose of the <body> tag in HTML?",
+    "options": ["To define the main content of the page", "To provide metadata about the document", "To create a header for the page", "To link to external stylesheets"],
+    "answer": "To define the main content of the page"
+  },
+  {
+    "question": "What is the purpose of the <title> tag in HTML?",
+    "options": ["To define the main content of the page", "To provide metadata about the document", "To create a header for the page", "To link to external stylesheets"],
+    "answer": "To provide metadata about the document"
+  }
+]

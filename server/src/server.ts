@@ -1,5 +1,6 @@
 import express from 'express';
 import path from 'node:path';
+import type { Request, Response } from 'express';
 
 import db from './config/connection.js';
 import routes from './routes/index.js';
@@ -16,7 +17,7 @@ app.use(routes);
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/dist')));
 
-   app.get('*', (_req, res) => {
+   app.get('*', (_req: Request, res: Response) => {
     res.sendFile(path.join(__dirname, '../client/dist/index.html'));
   });
 }
