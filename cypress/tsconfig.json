@@ -1,0 +1,25 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "composite": true, // Required for project references
+    "outDir": "./dist", // Specify output directory for compiled files
+    "rootDir": "./",    // Specify root directory for source files
+    "strict": true,     // Enable strict type-checking
+    "jsx": "react",     // Enable React JSX support
+    "module": "ESNext", // Use modern JavaScript modules
+    "target": "ES6",    // Target modern JavaScript
+    "esModuleInterop": true, // For compatibility with CommonJS modules
+    "skipLibCheck": true     // Skip type checking for libraries
+  },
+  "include": ["**/*.ts", "**/*.tsx"], // Include all TypeScript files
+  "exclude": ["node_modules", "dist"] // Exclude dependencies and output
+}
+
+// This file is used to configure TypeScript for Cypress tests.
+// It extends the base TypeScript configuration and specifies the types for Cypress.
+// The "isolatedModules" option is set to true to ensure that each file can be transpiled independently.
+// The "include" option specifies the file types to be included in the TypeScript compilation process.
+// This includes TypeScript and JavaScript files with .ts, .tsx, .js, and .jsx extensions.
+// The "types" option specifies the type definitions to be included in the compilation process.
+// In this case, it includes the type definitions for Cypress, which provides type information for Cypress commands and assertions.
+// This configuration file is typically used in a Cypress project to enable TypeScript support for writing tests.

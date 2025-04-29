@@ -6,9 +6,11 @@
     "rootDir": "src" /* Specify the root folder within your source files. */,
 
     /* Emit */
-    "outDir": "dist" /* Specify an output folder for all emitted files. */
-    // "noEmitOnError": true /* Disable emitting files if any type checking errors are reported. */
+    "outDir": "dist" /* Specify an output folder for all emitted files. */,
+    "resolveJsonModule": true, // Ensure JSON imports are resolved
+    "skipLibCheck": true
   },
-  "include": ["src", "**/*.json"],
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.json"], // Exclude JSON files from being emitted
   "typeRoots": ["./node_modules/@types", "./src/types"]
 }
