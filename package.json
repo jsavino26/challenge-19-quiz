@@ -14,7 +14,10 @@
     "build": "cd server && npm run build",
     "seed": "cd server && npm run seed",
     "render-build": "npm install && npm run build",
-    "test": "cypress open"
+    "cypress": "npx cypress open",
+    "test": "npx cypress run --browser electron --headless",
+    "test:comp": "npx cypress run --browser electron --headless --component"
+
   },
   "keywords": [],
   "author": "",
@@ -37,6 +40,7 @@
     "wait-on": "^7.2.0"
   },
   "dependencies": {
+    "@testing-library/cypress": "^10.0.3",
     "bootstrap": "^5.2.3",
     "dotenv": "^16.5.0",
     "react": "^18.2.0",
